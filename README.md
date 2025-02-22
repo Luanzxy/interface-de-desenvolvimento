@@ -23,10 +23,10 @@ primeira pagina
         
         <!-- Imagens no Cabeçalho -->
         <div class="imagens-cabecalho">
-            <img src="imagens/campo.jfif" alt="Descrição da Imagem 1" width="100">
-            <img src="imagens/litoral.webp" alt="Descrição da Imagem 2" width="100">
-            <img src="imagens/praia.jfif" alt="Descrição da Imagem 3" width="100">
-            <img src="imagens/montanha.jpg" alt="Descrição da Imagem 4" width="100">
+            <img src="Imagens/campo.jfif" alt="Imagem do campo" width="100">
+            <img src="Imagens/litoral.webp" alt="Imagem do litoral de uma cidade" width="100">
+            <img src="Imagens/praia.jfif" alt="Imagem de uma praia" width="100">
+            <img src="Imagens/montanha.jpg" alt="Imagem de uma montanha" width="100">
         </div>
 
         <nav>
@@ -49,7 +49,7 @@ primeira pagina
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Fênix Turismo. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Fênix Turismo. Sempre pensando em você.</p>
             <p>Endereço: Avenida Senador Salgado Filho, 1092 - Natal, Rn</p>
             <p>Telefone: (00) 1234-5678</p>
             <p>Email: contato@fenixturismo.com.br</p>
@@ -158,7 +158,19 @@ primeira pagina
            margin-top: 10px; 
            font-size: 14px; 
            color:white;
+
        }
+       /* Alinha o texto ao centro */
+.mapa-container h3 {
+    text-align: center;
+}
+
+/* Adiciona borda preta em volta do conteúdo da seção mapa-container */
+.mapa-container {
+    border: 1px solid #000; /* Cor da borda definida como preto */
+    padding: 10px; /* Espaçamento interno para melhor visualização da borda */
+}
+
     </style>
 </body>
 </html>
@@ -172,7 +184,7 @@ primeira pagina
 
 
 
-    <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -202,16 +214,21 @@ primeira pagina
     </header>
 
     <main>
-        <!-- Seção com a imagem e o texto -->
-        <div class="mapa-container">
-            <h3>Fênix Turismo</h3> <!-- Texto acima da imagem -->
-            <img src="imagens/mapa.png" alt="Mapa" class="mapa-imagem">
+        <div class="conteudo-main">
+            <img src="Imagens/Õnibus.jpg" alt="Mapa" class="imagem-main">
+            <div class="texto-main">
+                <h2>Fênix Turismo: 15 Anos de Excelência no Setor de Viagens</h2>
+                <h3>A Fênix Turismo completa 15 anos de existência, marcando uma jornada incrível no setor de viagens. Fundada em [ano], a empresa sempre se destacou pela paixão em oferecer experiências inesquecíveis aos seus clientes. Com uma equipe dedicada e especializada, a Fênix Turismo tem sido sinônimo de confiabilidade e satisfação para milhares de viajantes ao longo dos anos.</h3>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
         </div>
     </main>
+    
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Fênix Turismo. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Fênix Turismo. Sempre pensando em você.</p>
             <p>Endereço: Avenida Senador Salgado Filho, 1092 - Natal, Rn</p>
             <p>Telefone: (00) 1234-5678</p>
             <p>Email: contato@fenixturismo.com.br</p>
@@ -321,9 +338,37 @@ primeira pagina
            font-size: 14px; 
            color:white;
        }
+       .conteudo-main{
+    display: flex;
+    align-items: center; 
+    justify-content:center;
+}
+
+
+
+.imagem-main {
+    width: 300px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+.texto-main {
+    flex-grow: 1; /* Ocupa todo espaço disponível */
+}
+.texto-main h2 {
+    text-transform: uppercase; /* Transforma o texto em caixa alta */
+    margin-bottom: -10px; /* Ajusta a margem inferior para que fique mais perto do h3 */
+}
+
+.texto-main h3 {
+    text-transform: lowercase; /* Transforma o texto em caixa baixa */
+}
+
+
     </style>
 </body>
 </html>
+
 
 
 
